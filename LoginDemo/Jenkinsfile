@@ -1,0 +1,45 @@
+pipeline {  
+    agent any
+    tools
+	{
+        maven "MAVEN"
+    }
+    stages
+	{  
+            stage ('Git-Checkout')
+			{  
+                steps
+				{
+                    checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/vishnuprakashcs/UI_Login_Assignement']]])
+                    echo "Checkout successful";
+                } 
+            }
+            stage ('Compile')
+			{  
+			  steps
+			  {
+				bat label: '', script: 'mvn compile'
+				echo "Compile process success..";
+				
+			  } 
+            }
+            stage ('Build')
+			{  
+                  steps
+				  {
+                    bat label: '', script: 'mvn clean'
+                    bat label: '', script: 'mvn package'
+                    echo "Build process successful";
+                    
+                } 
+            }
+             stage ('Test')
+			 {  
+                  steps
+				  {
+                    bat label: '', script: 'mvn test'
+                    echo "Test process completed..";
+                } 
+            }
+    }
+}
