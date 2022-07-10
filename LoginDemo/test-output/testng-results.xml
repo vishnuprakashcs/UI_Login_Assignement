@@ -2,26 +2,16 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-10T21:46:11 IST" name="Suite" finished-at="2022-07-10T21:47:26 IST" duration-ms="75177">
+  <suite started-at="2022-07-10T23:18:54 IST" name="Suite" finished-at="2022-07-10T23:20:12 IST" duration-ms="77505">
     <groups>
     </groups>
-    <test started-at="2022-07-10T21:46:11 IST" name="Test" finished-at="2022-07-10T21:47:26 IST" duration-ms="75177">
-      <class name="TestCases.SetUpFixture">
-        <test-method is-config="true" signature="StartDockerGrid()[pri:0, instance:TestCases.SetUpFixture@121314f7]" started-at="2022-07-10T21:45:51 IST" name="StartDockerGrid" finished-at="2022-07-10T21:46:11 IST" duration-ms="20038" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StartDockerGrid -->
-        <test-method is-config="true" signature="StopDockerGrid()[pri:0, instance:TestCases.SetUpFixture@121314f7]" started-at="2022-07-10T21:47:27 IST" name="StopDockerGrid" finished-at="2022-07-10T21:47:47 IST" duration-ms="20031" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StopDockerGrid -->
-      </class> <!-- TestCases.SetUpFixture -->
+    <test started-at="2022-07-10T23:18:54 IST" name="Test" finished-at="2022-07-10T23:20:12 IST" duration-ms="77505">
       <class name="TestCases.InvalidLoginAttemptTest">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:TestCases.InvalidLoginAttemptTest@18df8434]" started-at="2022-07-10T21:46:11 IST" name="SetUp" finished-at="2022-07-10T21:46:32 IST" duration-ms="20330" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:TestCases.InvalidLoginAttemptTest@18df8434]" started-at="2022-07-10T23:18:54 IST" name="SetUp" finished-at="2022-07-10T23:19:15 IST" duration-ms="20461" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="LoginWithInValidCredentials()[pri:0, instance:TestCases.InvalidLoginAttemptTest@18df8434]" started-at="2022-07-10T21:46:32 IST" name="LoginWithInValidCredentials" finished-at="2022-07-10T21:46:36 IST" duration-ms="4160" status="FAIL">
+        <test-method signature="LoginWithInValidCredentials()[pri:0, instance:TestCases.InvalidLoginAttemptTest@18df8434]" started-at="2022-07-10T23:19:15 IST" name="LoginWithInValidCredentials" finished-at="2022-07-10T23:19:20 IST" duration-ms="5838" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="cbox_messagebox_error"]/p[@class="cbox_messagebox"]"}
@@ -30,9 +20,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'DESKTOP-R0NO93M', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [d3df317e7ba696cc810b357fb9c18e28, findElement {using=xpath, value=//div[@class="cbox_messagebox_error"]/p[@class="cbox_messagebox"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /tmp/.com.google.Chrome.7UZMLO}, goog:chromeOptions: {debuggerAddress: localhost:36237}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://172.26.0.3:4444/sessio..., se:cdpVersion: 103.0.5060.114, se:vnc: ws://172.26.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.26.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d3df317e7ba696cc810b357fb9c18e28]]>
+Command: [dda184a3d1904732d6c3eb22b131d0ce, findElement {using=xpath, value=//div[@class="cbox_messagebox_error"]/p[@class="cbox_messagebox"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /tmp/.com.google.Chrome.Zah7rQ}, goog:chromeOptions: {debuggerAddress: localhost:35097}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://172.28.0.3:4444/sessio..., se:cdpVersion: 103.0.5060.114, se:vnc: ws://172.28.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.28.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dda184a3d1904732d6c3eb22b131d0ce]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="cbox_messagebox_error"]/p[@class="cbox_messagebox"]"}
@@ -41,9 +31,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'DESKTOP-R0NO93M', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [d3df317e7ba696cc810b357fb9c18e28, findElement {using=xpath, value=//div[@class="cbox_messagebox_error"]/p[@class="cbox_messagebox"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /tmp/.com.google.Chrome.7UZMLO}, goog:chromeOptions: {debuggerAddress: localhost:36237}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://172.26.0.3:4444/sessio..., se:cdpVersion: 103.0.5060.114, se:vnc: ws://172.26.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.26.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d3df317e7ba696cc810b357fb9c18e28
+Command: [dda184a3d1904732d6c3eb22b131d0ce, findElement {using=xpath, value=//div[@class="cbox_messagebox_error"]/p[@class="cbox_messagebox"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /tmp/.com.google.Chrome.Zah7rQ}, goog:chromeOptions: {debuggerAddress: localhost:35097}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://172.28.0.3:4444/sessio..., se:cdpVersion: 103.0.5060.114, se:vnc: ws://172.28.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.28.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dda184a3d1904732d6c3eb22b131d0ce
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -99,12 +89,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- LoginWithInValidCredentials -->
       </class> <!-- TestCases.InvalidLoginAttemptTest -->
+      <class name="TestCases.SetUpFixture">
+        <test-method is-config="true" signature="StartDockerGrid()[pri:0, instance:TestCases.SetUpFixture@121314f7]" started-at="2022-07-10T23:18:34 IST" name="StartDockerGrid" finished-at="2022-07-10T23:18:54 IST" duration-ms="20051" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartDockerGrid -->
+        <test-method is-config="true" signature="StopDockerGrid()[pri:0, instance:TestCases.SetUpFixture@121314f7]" started-at="2022-07-10T23:20:12 IST" name="StopDockerGrid" finished-at="2022-07-10T23:20:32 IST" duration-ms="20017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StopDockerGrid -->
+      </class> <!-- TestCases.SetUpFixture -->
       <class name="TestCases.LoginAndLogoutTest">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:TestCases.LoginAndLogoutTest@65c7a252]" started-at="2022-07-10T21:46:36 IST" name="SetUp" finished-at="2022-07-10T21:47:09 IST" duration-ms="32925" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:TestCases.LoginAndLogoutTest@65c7a252]" started-at="2022-07-10T23:19:20 IST" name="SetUp" finished-at="2022-07-10T23:19:51 IST" duration-ms="30457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="LoginAndLogout()[pri:0, instance:TestCases.LoginAndLogoutTest@65c7a252]" started-at="2022-07-10T21:47:09 IST" name="LoginAndLogout" finished-at="2022-07-10T21:47:26 IST" duration-ms="17658" status="PASS">
+        <test-method signature="LoginAndLogout()[pri:0, instance:TestCases.LoginAndLogoutTest@65c7a252]" started-at="2022-07-10T23:19:51 IST" name="LoginAndLogout" finished-at="2022-07-10T23:20:12 IST" duration-ms="20682" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginAndLogout -->

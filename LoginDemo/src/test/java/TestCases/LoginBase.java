@@ -16,6 +16,6 @@ public class LoginBase
 	@BeforeClass
 	public void SetUp() throws Exception
 	{
-		System.out.print("Base");
+		System.out.print("Base ");
 	}
 }
