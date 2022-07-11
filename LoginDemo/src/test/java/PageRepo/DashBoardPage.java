@@ -4,16 +4,14 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 public class DashBoardPage
 {
-	private RemoteWebDriver driver;
+	private WebDriver driver;
 	private WebDriverWait wait;
 	
 	@FindBy(xpath="//input[@id=\"focus-new\"]")
@@ -25,7 +23,7 @@ public class DashBoardPage
 	@FindBy(xpath="//button[@type=\"button\"]")
 	private WebElement logoutBtn;
 	
-	public DashBoardPage(RemoteWebDriver driver)
+	public DashBoardPage(WebDriver driver)
 	{
 		this.driver = driver;
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
