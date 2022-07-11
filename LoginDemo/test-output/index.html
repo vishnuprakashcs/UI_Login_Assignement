@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.InvalidLoginAttemptTest" class="method navigator-link" hash-for-method="LoginWithInValidCredentials">LoginWithInValidCredentials</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -119,6 +105,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestCases.LoginAndLogoutTest" class="method navigator-link" hash-for-method="LoginAndLogout">LoginAndLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.InvalidLoginAttemptTest" class="method navigator-link" hash-for-method="LoginWithInValidCredentials">LoginWithInValidCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -133,9 +124,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">TestCases.InvalidLoginAttemptTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -144,37 +135,10 @@
                   <a name="LoginWithInValidCredentials">
                   </a> <!-- LoginWithInValidCredentials -->
                   <span class="method-name">LoginWithInValidCredentials</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&quot;cbox_messagebox_error&quot;]/p[@class=&quot;cbox_messagebox&quot;]&quot;}
-  (Session info: chrome=103.0.5060.114)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;DESKTOP-R0NO93M&apos;, ip: &apos;192.168.99.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [dda184a3d1904732d6c3eb22b131d0ce, findElement {using=xpath, value=//div[@class=&quot;cbox_messagebox_error&quot;]/p[@class=&quot;cbox_messagebox&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /tmp/.com.google.Chrome.Zah7rQ}, goog:chromeOptions: {debuggerAddress: localhost:35097}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://172.28.0.3:4444/sessio..., se:cdpVersion: 103.0.5060.114, se:vnc: ws://172.28.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.28.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dda184a3d1904732d6c3eb22b131d0ce
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
-	at PageRepo.LoginPage.getMessageBoxValue(LoginPage.java:52)
-	at TestCases.InvalidLoginAttemptTest.LoginWithInValidCredentials(InvalidLoginAttemptTest.java:49)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -200,13 +164,16 @@ Session ID: dda184a3d1904732d6c3eb22b131d0ce
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginAndLogout_Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestCases.SetUpFixture&quot;/&gt;
-      &lt;class name=&quot;TestCases.InvalidLoginAttemptTest&quot;/&gt;
       &lt;class name=&quot;TestCases.LoginAndLogoutTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- LoginAndLogout_Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;InvalidLoginAttempt_Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestCases.InvalidLoginAttemptTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- InvalidLoginAttempt_Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -218,7 +185,10 @@ Session ID: dda184a3d1904732d6c3eb22b131d0ce
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">LoginAndLogout_Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">InvalidLoginAttempt_Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -248,16 +218,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LoginAndLogout')
 data.setCell(0, 2, 'TestCases.LoginAndLogoutTest')
-data.setCell(0, 3, 20682);
+data.setCell(0, 3, 12799);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'LoginWithInValidCredentials')
 data.setCell(1, 2, 'TestCases.InvalidLoginAttemptTest')
-data.setCell(1, 3, 5838);
+data.setCell(1, 3, 4925);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -268,6 +238,23 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">LoginAndLogout</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Entered in to login page..</span>
+                <span class="reporter-method-output">Start inputing the username and password..</span>
+                <span class="reporter-method-output">Clicked the login button..</span>
+                <span class="reporter-method-output">Login successfull and trying to logout..</span>
+                <span class="reporter-method-output">Logout completed and successfull...</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">LoginWithInValidCredentials</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Invalid login attempt test started.</span>
+                <span class="reporter-method-output">Invalid login attempt test completed.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
@@ -283,41 +270,52 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.SetUpFixture</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestCases.InvalidLoginAttemptTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">StartDockerGrid</span>
+                <span class="method-name">SetUpGrid</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.InvalidLoginAttemptTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">SetUp</span>
-                <span class="method-start">20076 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">LoginWithInValidCredentials</span>
-                <span class="method-start">40557 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">TestCases.LoginAndLogoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">SetUpDriver(org.testng.TestRunner@29be997f)</span>
+                <span class="method-start">30042 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">SetUp</span>
-                <span class="method-start">46417 ms</span>
+                <span class="method-start">45778 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">LoginAndLogout</span>
-                <span class="method-start">76874 ms</span>
+                <span class="method-start">49616 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">QuitDriver</span>
+                <span class="method-start">62421 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.SetUpFixture</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestCases.InvalidLoginAttemptTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">SetUpDriver(org.testng.TestRunner@33eb6758)</span>
+                <span class="method-start">62706 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">75069 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">LoginWithInValidCredentials</span>
+                <span class="method-start">78649 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">QuitDriver</span>
+                <span class="method-start">83575 ms</span>
+              </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
-                <span class="method-name">StopDockerGrid</span>
-                <span class="method-start">97619 ms</span>
+                <span class="method-name">RemoveGrid</span>
+                <span class="method-start">83807 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
