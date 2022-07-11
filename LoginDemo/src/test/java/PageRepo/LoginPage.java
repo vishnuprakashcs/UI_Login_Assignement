@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage
 {
-	RemoteWebDriver driver;
+	WebDriver driver;
 	private WebDriverWait wait;
 	
 	@FindBy(name="username")
@@ -25,10 +25,10 @@ public class LoginPage
 	@FindBy(xpath="//button[@type=\"submit\"]")
 	private WebElement loginBtn;
 	
-	@FindBy(xpath="//div[@class=\"cbox_messagebox_error\"]/p[@class=\"cbox_messagebox\"]")
+	@FindBy(xpath="//p[@class=\"cbox_messagebox\"]")
 	private WebElement messageBox;
 	
-	public LoginPage(RemoteWebDriver driver)
+	public LoginPage(WebDriver driver)
 	{
 		this.driver = driver;
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
@@ -41,10 +41,13 @@ public class LoginPage
 		this.wait.until(ExpectedConditions.visibilityOf(this.userNameTxtBox));
 	}
 	
-	public void EnterUserCredentials(String userName, String password)
+	public void EnterUserCredentials(String userName, String password) throws InterruptedException
 	{
+		Thread.sleep(500);
 		this.userNameTxtBox.sendKeys(userName);
+		Thread.sleep(500);
 		this.passwordTxtBox.sendKeys(password);
+		Thread.sleep(500);
 	}
 	
 	public String getMessageBoxValue()
@@ -52,8 +55,9 @@ public class LoginPage
 		return this.messageBox.getText();
 	}
 	
-	public void ClickLoginButton()
+	public void ClickLoginButton() throws InterruptedException
 	{
+		Thread.sleep(500);
 		this.loginBtn.click();
 	}
 	
